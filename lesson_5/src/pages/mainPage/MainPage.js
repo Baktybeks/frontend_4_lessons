@@ -15,6 +15,8 @@ class MainPage extends Component {
     }
 
     componentDidUpdate(prevState) {
+        console.log(this.state.users)
+
         if (prevState.users !== this.state.users) {
             console.log(this.state.users)
         }
@@ -26,13 +28,10 @@ class MainPage extends Component {
                 <h1>Main Page</h1>
 
                 <ul>
-
                     {
                         this.state.users.map((user, index) =>
                             <li key={index}>{user}</li>)
-
                     }
-
                 </ul>
 
             </>
