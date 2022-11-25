@@ -17,13 +17,13 @@ class AboutPage extends React.Component {
                 <h1>About page</h1>
                 <button onClick={this.handleMenu}>menu</button>
                 {this.state.menu && <Menu/>}
-                    {/*// this.state.menu && <Menu/>*/}
-                    {/*// this.state.menu === true*/}
-                    {/*// ?*/}
-                    {/*// <Menu/>*/}
-                    {/*// :*/}
-                    {/*// ""*/}
-                    <Menu status={this.state.menu}/>
+                {/*// this.state.menu && <Menu/>*/}
+                {/*// this.state.menu === true*/}
+                {/*// ?*/}
+                {/*// <Menu/>*/}
+                {/*// :*/}
+                {/*// ""*/}
+                <Menu status={this.state.menu}/>
 
 
             </>
