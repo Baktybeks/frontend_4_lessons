@@ -27,8 +27,6 @@ function UsersPage() {
     const getUsers = () => {
         setUsers(usersFromBack)
     }
-
-
     return (
         <>
             <h1>Users list</h1>
