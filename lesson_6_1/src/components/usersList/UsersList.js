@@ -1,7 +1,9 @@
-import React from 'react';
-import {logDOM} from "@testing-library/react";
+import React, {useState} from 'react';
 
 function UsersList({usersList}) {
+    // const [user, setUser] = useState({})
+
+
     const getOneUserInfo = (event) => {
         const id = event.target.dataset.id
         fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
@@ -21,7 +23,7 @@ function UsersList({usersList}) {
                         <button
                             data-id={user.id}
                             onClick={getOneUserInfo}
-                        >get information
+                        >get information about {user.username}
                         </button>
                         <p>-----------------------------</p>
                     </li>
