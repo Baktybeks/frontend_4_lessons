@@ -3,15 +3,12 @@ import React, {useState} from 'react';
 function UsersList({usersList}) {
     // const [user, setUser] = useState({})
 
-
     const getOneUserInfo = (event) => {
         const id = event.target.dataset.id
         fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             .then(response => response.json())
             .then(data => console.log(data))
     }
-
-
     return (
         <ul>
             {
