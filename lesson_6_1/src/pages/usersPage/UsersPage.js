@@ -9,6 +9,7 @@ function UsersPage(props) {
             .then(resp => resp.json())
             .then(data => setUsers(data))
     }
+
     return (
         <>
             <h1>Users list</h1>

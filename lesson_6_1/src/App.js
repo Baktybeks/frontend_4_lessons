@@ -7,7 +7,7 @@ function App() {
         <div className="App">
             {/*<UsersPage/>*/}
             {/*<MainPage/>*/}
-<FormPage/>
+            <FormPage/>
         </div>
     );
 }
