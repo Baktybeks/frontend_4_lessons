@@ -1,3 +1,5 @@
 npx create-react-app lesson_5
 
 npm i react-router-dom
+
+npm install react-bootstrap bootstrap
